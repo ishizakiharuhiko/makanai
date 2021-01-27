@@ -9,7 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
 
       t.string  :name,               null: false
       t.text    :profile,            null: false
-      t.integer :budget,             null: false
+      t.integer :budget_id,          null: false
       t.integer :category_id,        null: false
       t.integer :prefecture_id,      null: false
       t.string  :city,               null: false

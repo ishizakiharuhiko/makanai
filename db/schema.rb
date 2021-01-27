@@ -10,14 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_17_071711) do
+ActiveRecord::Schema.define(version: 2021_01_21_023817) do
+
+  create_table "recipes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "title", null: false
+    t.text "material", null: false
+    t.text "making", null: false
+    t.text "point", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
     t.text "profile", null: false
-    t.integer "budget", null: false
+    t.integer "budget_id", null: false
     t.integer "category_id", null: false
     t.integer "prefecture_id", null: false
     t.string "city", null: false
