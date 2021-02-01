@@ -1,16 +1,16 @@
 <%= render "shared/header" %>
 <div class='main'>
 
-  <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
+  <%# 画面上部の「プロの味をご家庭で」帯部分 %>
   <div class='title-contents'>
     <h2 class='service-title'>
-      人生を変えるフリマアプリ
+      プロの味をご家庭で
     </h2>
     <p class='service-explain'>
-      FURIMAはだれでもかんたんに出品・購入できる
+      まかない.comは料理人のレシピ投稿サイト
     </p>
     <p class='service-explain'>
-      フリマアプリです
+      プロの味だから失敗がありません
     </p>
     <div class='store-btn'>
       <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
@@ -126,19 +126,14 @@
     <%= link_to '新規投稿商品', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
-      <% unless @items.empty? %>
-      <% @items.each do |item| %>
+      <% unless @recipes.empty? %>
+      <% @recipes.each do |recipe| %>
       <li class='list'>
-        <%= link_to item_path(item) do %>
+        <%= link_to item_path(recipe) do %>
         <div class='item-img-content'>
-          <%= image_tag item.image, class: "item-img" %>
-          <% unless item.order.blank? %>
-            <div class='sold-out'>
-              <span>Sold Out!!</span>
-            </div>
-          <% end %>
-
+          <%= image_tag recipe.image, class: "item-img" %>
         </div>
+
         <div class='item-info'>
           <h3 class='item-name'>
             <%= item.title %>
