@@ -3,10 +3,11 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-    belongs_to_active_hash :budget
-    belongs_to_active_hash :category
-    belongs_to_active_hash :prefecture
+  belongs_to_active_hash :budget
+  belongs_to_active_hash :category
+  belongs_to_active_hash :prefecture
 
+  has_one_attached :image
   has_many :recipes
 
   with_options presence: true do
