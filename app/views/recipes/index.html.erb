@@ -4,13 +4,13 @@
   <%# 画面上部の「プロの味をご家庭で」帯部分 %>
   <div class='title-contents'>
     <h2 class='service-title'>
-      プロの味をご家庭で
+      失敗知らずのプロの味
     </h2>
     <p class='service-explain'>
       まかない.comは料理人のレシピ投稿サイト
     </p>
     <p class='service-explain'>
-      プロの味だから失敗がありません
+      誰でも無料で利用できます!
     </p>
     <div class='store-btn'>
       <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
@@ -136,10 +136,10 @@
 
         <div class='item-info'>
           <h3 class='item-name'>
-            <%= item.title %>
+            <%= recipe.title %>
           </h3>
           <div class='item-price'>
-            <span><%= item.price %>円<br><%= item.shipping.name %></span>
+            <span><%= recipe.category.name %>円<br><%= item.shipping.name %></span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
@@ -174,7 +174,7 @@
   </div>
   <%# /商品一覧 %>
 </div>
-<%= link_to(new_item_path, class: 'purchase-btn') do %>
+<%= link_to(new_recipe_path, class: 'purchase-btn') do %>
   <span class='purchase-btn-text'>出品する</span>
   <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>
