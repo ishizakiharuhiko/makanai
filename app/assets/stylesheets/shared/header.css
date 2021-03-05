@@ -16,15 +16,22 @@
 }
 
 .furima-icon {
-  width: 10vw;
-  margin-right: 10vw;
+  width: 7vw;
+}
+
+.title-logo {
+  font-size: 3vh;
+  color: #330000;
+  font-weight: bold;
+  white-space: nowrap
 }
 
 .search-form {
-  width: 65vw;
+  width: 60vw;
   height: 5vh;
   display: flex;
   margin-bottom: 5px;
+  margin-left: 20px;
 }
 
 .search-form>.input-box {
@@ -37,7 +44,7 @@
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  background-color: #663300;
   padding: 8px;
 }
 
@@ -66,7 +73,7 @@
   color: #333333;
 }
 
-.brand-list {
+.place-list {
   text-decoration: none;
   color: #333333;
 }

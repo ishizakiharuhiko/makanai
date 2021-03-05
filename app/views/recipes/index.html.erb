@@ -1,7 +1,7 @@
 <%= render "shared/header" %>
 <div class='main'>
 
-  <%# 画面上部の「プロの味をご家庭で」帯部分 %>
+  <%# 画面上部の「失敗知らずのプロの味」帯部分 %>
   <div class='title-contents'>
     <h2 class='service-title'>
       失敗知らずのプロの味
@@ -17,113 +17,76 @@
       <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
     </div>
   </div>
-  <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
+  <%# /画面上部の「失敗知らずのプロの味」帯部分  %>
 
-  <%# FURIMAが選ばれる3つの理由部分 %>
+  <%# まかない.comの3つの特徴部分 %>
   <div class='select-reason-contents'>
     <h2 class='title'>
-      FURIMAが選ばれる3つの理由
+      まかない.comの3つの特徴
     </h2>
     <ul class='reason-lists'>
       <li class='list'>
-        <%= image_tag "furima-intro01.png", class:"list-pict" %>
+        <%= image_tag "phone-chef.jpeg", class:"list-pict" %>
         <span class='reason-list-number'>1</span>
         <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>3分</span>
-          ですぐに出品
+          <span class='reason-list-blue-text'>料理人</span>
+          が投稿するレシピ
         </h3>
         <p class='reason-list-description'>
-          スマホで入力するだけで簡単に出品できる！
+          プロのレシピなので失敗がありません！
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro02.png", class:"list-pict" %>
+        <%= image_tag "not-sign-in.jpeg", class:"list-pict" %>
         <span class='reason-list-number'>2</span>
         <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>シンプル</span>
-          で使いやすい
+          <span class='reason-list-blue-text'>登録不要</span>
+          で閲覧可能
         </h3>
         <p class='reason-list-description'>
-          めんどくさい入力は必要なく、検索も購入もスムーズ！
+          どんな人でも使いやすい！
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro03.png", class:"list-pict" %>
+        <%= image_tag "phone-woman.jpeg", class:"list-pict" %>
         <span class='reason-list-number'>3</span>
         <h3 class='reason-list-text'>
-          手数料
-          <span class='reason-list-blue-text'>業界最安</span>
+          気に入ったら
+          <span class='reason-list-blue-text'>予約</span>
         </h3>
         <p class='reason-list-description'>
-          10%でお得に出品&購入！
+          お店の予約までスムーズです
         </p>
       </li>
     </ul>
   </div>
-  <%# /FURIMAが選ばれる3つの理由部分 %>
+  <%# /まかない.comの3つの特徴部分 %>
 
-  <%# 画面中央の「会員数日本一位」帯部分 %>
+  <%# 画面中央の帯部分 %>
   <div class='ad-contents'>
     <h2 class='ad-title'>
-      会員数日本一位
+      家庭料理から店舗予約まで
     </h2>
     <p class='ad-explain'>
-      FURIMAは、フリマアプリで最も人気。
+      まかない.comには○○万以上のレシピが掲載されています！
     </p>
     <p class='ad-explain'>
-      出品・購入回数も業界最多です！
+      予約件数も○○件突破！
     </p>
     <p class='ad-explain'>
-      ほしかったあの商品に出会えるかもしれません。
+      新しいお店に出会えるかも。
     </p>
     <div class='store-btn'>
       <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
       <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
     </div>
   </div>
-  <%# /画面中央の「会員数日本一位」帯部分 %>
+  <%# /画面中央の帯部分 %>
 
-  <%# FURIMAの特徴 %>
-  <div class='feature-contents'>
-    <h2 class='title'>
-      FURIMAの特徴
-    </h2>
-    <ul class='feature-lists'>
-      <li class='list'>
-        <%= image_tag "furima-intro04.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          簡単に売り買いできる
-        </h3>
-        <p class='feature-list-description'>
-          スマホひとつで、いつでもどこでも簡単に出品・購入が可能！
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "furima-intro05.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          売上金は即日振込みに対応
-        </h3>
-        <p class='feature-list-description'>
-          午前9時までに振込を依頼いただければ、翌日に指定の口座に入金いたします。
-        </p>
-      </li>
-      <li class='list'>
-        <%= image_tag "furima-intro06.png", class:"list-pict" %>
-        <h3 class='feature-list-text'>
-          様々な支払いに対応
-        </h3>
-        <p class='feature-list-description'>
-          お支払いは、クレジットカードだけでなく、ポイントや売上金など多彩な方法があります。
-        </p>
-      </li>
-    </ul>
-  </div>
-  <%# /FURIMAの特徴 %>
-
-  <%# 商品一覧 %>
+  <%# レシピ一覧 %>
   <div class='item-contents'>
-    <h2 class='title'>ピックアップカテゴリー</h2>
-    <%= link_to '新規投稿商品', "#", class: "subtitle" %>
+    <h2 class='title'>新着レシピ</h2>
+    <%= link_to '新規投稿レシピ', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
       <% unless @recipes.empty? %>
@@ -139,7 +102,7 @@
             <%= recipe.title %>
           </h3>
           <div class='item-price'>
-            <span><%= recipe.category.name %>円<br><%= item.shipping.name %></span>
+            <span><%= recipe.category.name %></span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
@@ -156,10 +119,10 @@
         <%= image_tag "https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/10/a004.png", class: "item-img" %>
         <div class='item-info'>
           <h3 class='item-name'>
-            商品を出品してね！
+            レシピを投稿してね！
           </h3>
           <div class='item-price'>
-            <span>99999999円<br>(税込み)</span>
+            <span>和食・日本料理</span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
@@ -175,7 +138,7 @@
   <%# /商品一覧 %>
 </div>
 <%= link_to(new_recipe_path, class: 'purchase-btn') do %>
-  <span class='purchase-btn-text'>出品する</span>
-  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+  <span class='purchase-btn-text'>投稿する</span>
+  <%= image_tag 'makanai-logo.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>
 <%= render "shared/footer" %>

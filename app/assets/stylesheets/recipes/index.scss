@@ -6,10 +6,10 @@ a {
   background: #f8f8f8;
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
+/* 画面上部の「失敗知らずのプロの味」帯部分 */
 .title-contents {
   width: 100vw;
-  background-image: image-url('furima-header01.png');
+  background-image: image-url('makanai-top.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -45,9 +45,9 @@ a {
   height: 9vh;
 }
 
-/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
+/* //画面上部の「失敗知らずのプロの味」帯部分 */
 
-/* FURIMAが選ばれる3つの理由部分 */
+/* まかない.comの3つの特徴部分 */
 .select-reason-contents {
   padding: 5vh 15vw;
 }
@@ -64,7 +64,7 @@ a {
   content: '';
   width: 70px;
   height: 4px;
-  background-color: #3ccace;
+  background-color: #663300;
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -99,7 +99,7 @@ a {
   font-size: 30px;
   text-align: center;
   line-height: 60px;
-  background-color: #3ccace;
+  background-color: #330000;
   color: #fff;
 }
 
@@ -110,7 +110,7 @@ a {
 }
 
 .reason-list-blue-text {
-  color: #3ccace;
+  color: #663300;
 }
 
 .reason-list-description {
@@ -118,13 +118,13 @@ a {
   margin-top: 20px;
 }
 
-/* //FURIMAが選ばれる3つの理由部分 */
+/* //まかない.comの3つの特徴部分 */
 
 
-/* 画面中央の「会員数日本一位」帯部分*/
+/* 画面中央の帯部分*/
 .ad-contents {
   width: 100vw;
-  background-image: image-url('furima-header02.png');
+  background-image: image-url('izakaya.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -161,57 +161,7 @@ a {
   height: 9vh;
 }
 
-/* //画面中央の「会員数日本一位」帯部分 */
-
-/* FURIMAの特徴 */
-.feature-contents {
-  padding: 5vh 15vw;
-}
-
-.feature-contents>.title {
-  text-align: center;
-  font-size: 3.5vh;
-  font-weight: bold;
-  margin-bottom: 5vh;
-  position: relative;
-}
-
-.feature-contents>.title::after {
-  content: '';
-  width: 70px;
-  height: 4px;
-  background-color: #3ccace;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.feature-lists {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.feature-lists>.list {
-  width: 33vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.feature-list-text {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 50px;
-}
-
-.feature-list-description {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-/* //FURIMAの特徴 */
+/* //画面中央の帯部分 */
 
 /* 商品一覧 */
 
@@ -233,7 +183,7 @@ a {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
-  color: #3ccace;
+  color: #663300;
   font-weight: bold;
 }
 
